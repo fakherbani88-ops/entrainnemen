@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consommation STEG - DenDen</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #174a7e;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #174a7e;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f6fa;
+        }
+
+        tbody tr:hover {
+            background-color: #e1edf8;
+        }
+
+        .total {
+            font-weight: bold;
+            background-color: #d9ead3;
+        }
+
+        .fraude {
+            color: #c62828;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 12px;
+            }
+
+            th, td {
+                padding: 8px 4px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Consommation STEG - DenDen</h1>
+        <p>Suivi des consommations électriques mensuelles</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Maison / Société</th>
+                    <th>Consommation Juillet</th>
+                    <th>Consommation Août</th>
+                    <th>Observation</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Maison 1</td>
+                    <td>150</td>
+                    <td>150</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Maison 2</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td class="fraude">Fraude</td>
+                </tr>
+                <tr>
+                    <td>Maison 3</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Maison 4</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Maison 5</td>
+                    <td>150</td>
+                    <td>150</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Maison 6</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Maison 7</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Maison 8</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Maison 9</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Maison 10</td>
+                    <td>150</td>
+                    <td>150</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Office National de l'artisanat</td>
+                    <td>950</td>
+                    <td>950</td>
+                    <td>-</td>
+                </tr>
+                <tr class="total">
+                    <td>Total</td>
+                    <td>2000</td>
+                    <td>1900</td>
+                    <td>-</td>
+                </tr>
+                <tr class="total">
+                    <td>Compteur DenDen</td>
+                    <td>2000</td>
+                    <td>2000</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
